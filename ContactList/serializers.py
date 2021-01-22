@@ -5,5 +5,4 @@ from .models import ContactListModel
 class ContactListSerializer(serializers.ModelSerializer):
     class Meta:
         model = ContactListModel
-        fields = ['id', 'name', 'surname', 'role',
-                  'avatar', 'status', 'email', 'gender']
+        fields = '__all__'
